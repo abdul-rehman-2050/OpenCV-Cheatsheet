@@ -75,6 +75,12 @@ plt.show()
   
 ```
 
+### Median Blur Filter
+```python
+  img = cv2.medianBlur(img,5)
+
+```
+
 ### Cuntour Detection
 
 ```python
