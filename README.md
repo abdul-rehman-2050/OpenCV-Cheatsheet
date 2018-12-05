@@ -81,6 +81,21 @@ plt.show()
 
 ```
 
+### Gaussian Filter
+
+```python
+
+blur = cv2.GaussianBlur(img,(5,5),0)
+
+```
+
+### Otsu's Thresholding
+
+```python
+  # Otsu's thresholding
+  ret2,th2 = cv2.threshold(img,0,255,cv2.THRESH_BINARY+cv2.THRESH_OTSU)
+```
+
 ### Cuntour Detection
 
 ```python
