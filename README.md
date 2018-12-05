@@ -6,7 +6,7 @@ Sample code and examples for OpenCV, Python
 
 ## Basic Operations
 
-* Checking the version
+### Checking the version
 
 ```python
 
@@ -15,7 +15,7 @@ print cv2.__version__
   
 ```
 
-* Loading Image in Grayscale
+### Loading Image in Grayscale
 
 ```python
  import cv2
@@ -24,7 +24,7 @@ print cv2.__version__
   
 ```
 
-* Display Image
+### Display Image
 
 ```python
  cv2.imshow('image',img)
@@ -32,7 +32,7 @@ print cv2.__version__
  cv2.destroyAllWindows()
 ```
 
-* Check keypress and write Image
+### Check keypress and write Image
 
 ```python 
 import numpy as np
@@ -49,7 +49,7 @@ elif k == ord('s'): # wait for 's' key to save and exit
 
 ```
 
-* Using Matplotlib
+### Using Matplotlib
 
 Its always handy to display images using matplotlib library. So here is an example of doing this 
 
@@ -67,12 +67,39 @@ plt.show()
 
 ## Pre-processing 
 
+### Grayscale to binary Threshold method
+
+```python
+  
+  ret,thresh = cv2.threshold(frame_threshed,127,255,0)
+  
+```
+
+### Cuntour Detection
+
+```python
+  
+  contours, hierarchy = cv2.findContours(thresh,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
+
+```
+
 ## Post-Processing
 
-* [Display Text on Image](https://stackoverflow.com/questions/16615662/how-to-write-text-on-a-image-in-windows-using-python-opencv2)
+[Display Text on Image](https://stackoverflow.com/questions/16615662/how-to-write-text-on-a-image-in-windows-using-python-opencv2)
 
 ```python
   cv2.putText(image,"Hello World!!!", (x,y), cv2.FONT_HERSHEY_SIMPLEX, 2, 255)
+```
+[Crop Image with x,y,w,h](https://stackoverflow.com/questions/15589517/how-to-crop-an-image-in-opencv-using-python)
+
+```python
+
+import cv2
+img = cv2.imread("lenna.png")
+crop_img = img[y:y+h, x:x+w]
+cv2.imshow("cropped", crop_img)
+cv2.waitKey(0)
+
 ```
 
 
