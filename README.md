@@ -100,6 +100,19 @@ blur = cv2.GaussianBlur(img,(5,5),0)
   ret2,th2 = cv2.threshold(img,0,255,cv2.THRESH_BINARY+cv2.THRESH_OTSU)
 ```
 
+
+### Erosion
+
+```python
+import cv2
+import numpy as np
+
+img = cv2.imread('j.png',0)
+kernel = np.ones((5,5),np.uint8)
+erosion = cv2.erode(img,kernel,iterations = 1)
+
+```
+
 ### Cuntour Detection
 
 ```python
