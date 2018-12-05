@@ -1,9 +1,10 @@
 # OpenCV-Cheatsheet
 Sample code and examples for OpenCV, Python 
 
-[Python](#Python)
-[Pre processing](#Pre-processing)
-
+* [Python](#Python)
+* [Pre processing](#Pre-processing)
+* [Post processing](#Post-processing)
+* [Examples](#Examples)
 
 # Python
 
@@ -107,7 +108,7 @@ blur = cv2.GaussianBlur(img,(5,5),0)
 
 ```
 
-## Post-Processing
+# Post-processing
 
 [Display Text on Image](https://stackoverflow.com/questions/16615662/how-to-write-text-on-a-image-in-windows-using-python-opencv2)
 
@@ -127,7 +128,7 @@ cv2.waitKey(0)
 ```
 
 
-## Examples
+# Examples
 
 ### [Find Biggest Color Object OpenCV-2.4](https://stackoverflow.com/questions/16538774/dealing-with-contours-and-bounding-rectangle-in-opencv-2-4-python-2-7)
 
