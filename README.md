@@ -1,8 +1,9 @@
 # OpenCV-Cheatsheet
 Sample code and examples for OpenCV, Python 
 
+[Python](#Python)
+[Pre processing](#Pre-processing)
 
-[Pre processing](##Pre-processing)
 
 # Python
 
@@ -67,7 +68,7 @@ plt.show()
 
 ```
 
-## Pre-processing 
+# Pre-processing 
 
 ### Grayscale to binary Threshold method
 
