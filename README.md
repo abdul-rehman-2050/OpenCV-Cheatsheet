@@ -150,6 +150,13 @@ cv2.waitKey(0)
 
 ```
 
+[Draw a Line on Image](https://stackoverflow.com/questions/18632276/how-to-draw-a-line-on-an-image-in-opencv)
+
+```python
+lineThickness = 2
+cv2.line(image, (x1, y1), (x2, y2), (0,255,0), lineThickness)
+
+```
 
 # Examples
 
